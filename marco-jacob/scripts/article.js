@@ -56,7 +56,7 @@ Article.fetchAll = function() {
   } else {
     $.get('data/hackerIpsum.json', JSON.parse(localStorage.rawData));
     articleView.initIndexPage();
-    // TODO: When we don't already have the rawData,
+    // DONE: When we don't already have the rawData,
     // we need to retrieve the JSON file from the server with AJAX (which jQuery method is best for this?),
     // cache it in localStorage so we can skip the server call next time,
     // then load all the data into Article.all with the .loadAll function above,
